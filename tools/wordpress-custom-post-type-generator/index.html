@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- Mirrored from www.wp-hasty.com/tools/wordpress-custom-post-type-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 May 2021 18:06:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<script data-ad-client="ca-pub-2992793665884746" async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97428699-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-97428699-1', {
+			'anonymize_ip': true
+		});
+		gtag('config', 'AW-954598512');
+
+	</script>
+
+		
+	
+	<meta name="robots" content="index,follow"><title>WordPress Custom Post Type Generator » WP Hasty</title><meta property="article:tag" content="WordPress Custom Post Type Generator » WP Hasty" /><meta name="description" content="Create Custom Post Types for WordPress fast and easy with the WordPress Custom Post Type Generator from WP Hasty."><meta property="og:url" content="https://www.wp-hasty.com/tools/wordpress-custom-post-type-generator/" /><meta property="og:site_name" content="Hasty" /><meta property="article:publisher" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.wp-hasty.com/xmlrpc.php">
+
+	<link rel="preload" type="font/woff2" as="font" href="../../wp-content/themes/hasty2/fonts/boxicons.woff2" crossorigin>
+	<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://www.google.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Hasty &raquo; Feed" href="https://www.wp-hasty.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hasty &raquo; Comments Feed" href="https://www.wp-hasty.com/comments/feed/" />
+<link rel='stylesheet' id='mp-theme-css'  href='../../wp-content/plugins/memberpress/css/ui/theme7b47.css?ver=1.9.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='../../wp-includes/css/dist/block-library/style.min9f31.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hasty-style-css'  href='../../wp-content/themes/hasty2/style0e7e.css?ver=7' type='text/css' media='all' />
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var ajaxfunktion = {"ajaxurl":"https:\/\/www.wp-hasty.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='../../../www.google.com/recaptcha/api6e79.js?render=6LclJXwUAAAAAB8vPNN3MH5jsgZ5SBZjZvS5-Tbi&amp;ver=7' id='recaptcha-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/hasty2/js/min/headerscripts-min0e7e.js?ver=7' id='headerscripts-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/hasty2/js/min/footerscripts-min0e7e.js?ver=7' id='footerscripts-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/hasty2/js/plugins/ace/ace0e7e.js?ver=7' id='ace-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/hasty2/js/min/toolscripts-min0e7e.js?ver=7' id='toolsscripts-js'></script>
+<link rel="https://api.w.org/" href="https://www.wp-hasty.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.wp-hasty.com/wp-json/wp/v2/tools/73" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wp-hasty.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wp-hasty.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='https://www.wp-hasty.com/?p=73' />
+<link rel="alternate" type="application/json+oembed" href="https://www.wp-hasty.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wp-hasty.com%2Ftools%2Fwordpress-custom-post-type-generator%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.wp-hasty.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wp-hasty.com%2Ftools%2Fwordpress-custom-post-type-generator%2F&amp;format=xml" />
+<meta name="framework" content="Redux 4.1.26" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="../../wp-content/uploads/2018/11/cropped-fav-hasty-19-32x32.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2018/11/cropped-fav-hasty-19-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2018/11/cropped-fav-hasty-19-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.wp-hasty.com/wp-content/uploads/2018/11/cropped-fav-hasty-19-270x270.png" />
+	
+</head>
+
+
+<body class="tools-template-default single single-tools postid-73 editor-bright hasty-light">
+	<div id="page" class="hfeed site" data-logged="true">
+
+		<a class="skip-link screen-reader-text" href="#content">
+			Skip to content</a>
+
+		<header class="clear">
+			<div class="container">
+
+				<a id="logowrapper" title="Go to home" href="https://www.wp-hasty.com/">
+					<div id="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2548.89 861.18">
+							<path fill="#224991" d="M175.11 37.89a129.37 129.37 0 0 1 183 0l411.6 411.7-91.48 91.47a129.37 129.37 0 0 1-182.95 0L358.06 678.24l-91.48-91.48 228.7-228.7zm91.48 731.81l-91.48-91.48a129.38 129.38 0 0 0 0 183z"
+							 data-name="&lt;Zusammengesetzter Pfad&gt;" />
+							<path fill="#3C80FF" d="M37.89 449.59a129.38 129.38 0 0 1 0-183l91.48 91.48 137.2-137.21 91.47 91.47-137.21 137.19 228.7 228.7a129.38 129.38 0 0 1 0 183z"
+							 data-name="&lt;Pfad&gt;" />
+							<path class="wording" fill="#224991" d="M1114.84 391.93H975.72V247.06h-79.5v365.06h79.5V462.54h139.12v149.58h79.49V247.06h-79.49v144.87zM1365.35 247.06l-120.29 365.06h80.54l26.15-86.82h121.86l26.15 86.82h82.64l-118.72-365.06zm5.23 210.77l40.27-138.59h2.62l40.79 138.59zM1782.7 391.17l-36.08-5.76q-23-3.62-33.21-11.9t-10.2-26.92q0-16.56 13.07-25.88t39.75-9.32q28.25 0 46.81 9.58a106.09 106.09 0 0 1 31.64 24.62l52.82-53.44a147.45 147.45 0 0 0-53.86-38.23q-31.38-13.1-72.7-13.1-32.43 0-57.79 8.11t-42.89 22.79a99.37 99.37 0 0 0-26.93 35.08q-9.42 20.42-9.42 45 0 46.1 26.94 73.83t85 35.09l36.09 4.66q25.62 3.63 34 13.74t8.36 25.13q0 19.71-14.12 31.62t-43.43 11.92q-54.39 0-91.52-41.47l-52.3 52.89a186.41 186.41 0 0 0 57 42.69q33.46 16.49 81.58 16.49 34 0 60.67-8.63t44.72-24.35a103.17 103.17 0 0 0 27.46-37.7q9.41-22 9.41-48.16 0-47.64-27.2-73.56t-83.67-34.82zM1921.3 317.67h98.85v294.45h79.49V317.67h98.85v-70.61H1921.3v70.61zM2462.6 247.06l-75.31 145.4h-1.05l-78.45-145.4h-88.91l125 222.28v142.78h80.02V468.81l124.99-221.75h-86.29z" />
+						</svg>
+					</div>
+				</a>
+
+				<nav>
+					<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="../index.html">Generators</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://www.wp-hasty.com/snippets/">My Snippets</a></li>
+</ul></div>				</nav>
+
+
+				<div id="buttons" class="userloggedmenu">
+					<a id="optionsopen" title="Options" href="#"><i class="bx bx-slider"></i><i class="bx bx-x"></i></a>
+															<a title="Login" href="https://www.wp-hasty.com/login/">Login</a>
+										<a class="pro" title="Become a PRO" href="https://www.wp-hasty.com/pro/">Become a pro</a>
+										
+				</div>
+			</div>
+		</header><!-- #masthead --><div class="innerpage" style="opacity:0">
+<div id="single-code">
+	<div id="codeeditor"></div>
+</div>
+
+<div id="helpermenu">
+	<div><span>Help / Tutorial</span><i id="first" class='bx bx-question-mark'></i><i id="second" class='bx bx-x'></i>
+	</div>
+</div>
+<div id="feedbackmenu">
+	<div><span>Feedback / Bugs</span><i class='bx bx-message-rounded first'></i><i class='bx bx-x second'></i></div>
+</div>
+<div id="codemenu">
+	<div><span>Code Editor</span><i class='bx bx-code first'></i><i class='bx bx-x second'></i></div>
+</div>
+
+<div id="single-fields" data-snippetid="" 	data-generator="73"
+	data-nields="">
+	<div class="container">
+		<div id="toolstitle">
+			<div class="inner">
+				<i class='bx bx-chevron-down'></i>
+				<span>Generators</span>
+				<h1>WordPress Custom Post Type Generator</h1>
+				<div class="list">
+					<ul><li ><a href="../wordpress-admin-notice-generator/index.html" title="Open this generator"> Admin Notice Generator</a></li><li ><a href="../wordpress-cron-job-event-generator/index.html" title="Open this generator"> Cron Job Event Generator</a></li><li class="current"><a href="index.html" title="Open this generator"> Custom Post Type Generator</a></li><li ><a href="../wordpress-custom-user-profile-fields/index.html" title="Open this generator"> Custom User Profile Fields</a></li><li ><a href="../wordpress-dashboard-widgets-generator/index.html" title="Open this generator"> Dashboard Widgets Generator</a></li><li ><a href="../wordpress-login-form-generator/index.html" title="Open this generator"> Login Form Generator</a></li><li ><a href="../wordpress-metabox-generator/index.html" title="Open this generator"> Meta Box Generator</a></li><li ><a href="../wordpress-menu-generator/index.html" title="Open this generator"> Menu Generator</a></li><li ><a href="../wordpress-plugin-header-generator/index.html" title="Open this generator"> Plugin Header Generator</a></li><li ><a href="../wordpress-post-status-generator/index.html" title="Open this generator"> Post Status Generator</a></li><li ><a href="../wordpress-quicktags-for-classic-editor-generator/index.html" title="Open this generator"> Quicktags for Classic Editor Generator</a></li><li ><a href="../wordpress-register-enqueue-scripts-js/index.html" title="Open this generator"> Register / Enqueue Scripts (JS)</a></li><li ><a href="../wordpress-register-enqueue-styles-css/index.html" title="Open this generator"> Register / Enqueue Styles (CSS)</a></li><li ><a href="../wordpress-register-image-size/index.html" title="Open this generator"> Register Image Size</a></li><li ><a href="../wordpress-settings-options-page-generator/index.html" title="Open this generator"> Settings / Options Page Generator</a></li><li ><a href="../wordpress-shortcode-generator/index.html" title="Open this generator"> Shortcode Generator</a></li><li ><a href="../wordpress-sidebar-generator/index.html" title="Open this generator"> Sidebar Generator</a></li><li ><a href="../wordpress-tax-query-generator/index.html" title="Open this generator"> Tax Query Generator</a></li><li ><a href="../wordpress-taxonomy-generator/index.html" title="Open this generator"> Taxonomy Generator</a></li><li ><a href="../wordpress-term-meta-generator/index.html" title="Open this generator"> Term Meta Generator</a></li><li ><a href="../wordpress-theme-header-generator/index.html" title="Open this generator"> Theme Header Generator</a></li><li ><a href="../wordpress-user-contact-methods-generator/index.html" title="Open this generator"> User Contact Methods Generator</a></li><li ><a href="../visual-composer-element-generator/index.html" title="Open this generator">Visual Composer Element Generator</a></li><li ><a href="../wordpress-widget-generator/index.html" title="Open this generator"> Widget Generator</a></li><li ><a href="../wordpress-wp-mail-function-generator/index.html" title="Open this generator"> WP Mail Function Generator</a></li><li ><a href="../wordpress-wp-query-loop-generator/index.html" title="Open this generator"> WP Query Loop Generator</a></li></ul>				</div>
+			</div>
+		</div>
+
+		<div class="fields">
+		
+
+			<div class="globalfields">
+				<span class="pro probadge">PRO</span>				<div class="row without">
+					<div class="input-field col col-lg-6">
+						<span class="iconholder text hint--top"
+							aria-label="Your own snippet title, so you can find your snippet in Hasty.">
+							<i class="bx bx-info-circle help"></i>
+						</span>
+						<div id="global_title_length"><span>0</span> / 50</div>
+						<label for="global_title">Snippet Title</label>
+						<input id="global_title" type="text" placeholder="For example: Project Space" maxlength="50">
+					</div>
+					<div class="radio col col-lg-4">
+						<p class="radio-title">Code-Format
+							<span class="iconholder hint--top" aria-label="How should the generated code be formatted.">
+								<i class="bx bx-info-circle help"></i>
+							</span>
+						</p>
+						<select id="global_format">
+							<option value="normal" selected>Normal</option>
+											<option value="helpers">Normal with Helpers</option>
+											<option value="compressed">Compressed</option>						</select>
+					</div>
+					<div class="input-field col col-lg-2">
+						<span class="iconholder text hint--top"
+							aria-label="The ID is allocated by Hasty and can't be changed.">
+							<i class="bx bx-info-circle help"></i>
+						</span>
+						<label for="global_id">Snippet ID</label>
+						<input id="global_id" disabled type="text"
+							value="Not saved">
+					</div>
+				</div>
+			</div>
+
+			<a rel="sponsored" href="https://kinsta.com/?kaid=QJHPGMMMYWFE"><img style="display:block; margin:1rem auto 2rem;border-radius:3px" width="728" height="90" loading="lazy" src="../../wp-content/uploads/kinsta2.jpg" /></a>			
+				
+<div class="single-form">
+	<form autocomplete="off">
+		<div class="row without">
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="Singular name of the post type.">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="name_singular">Post Type Name (Singular)</label>
+				<input id="name_singular" type="text">
+			</div>
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="Plural name of the post type.">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="name_plural">Post Type Name (Plural)</label>
+				<input id="name_plural" type="text">
+			</div>
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="The post type key used in queries to get the specific posts.">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="key">Post Type Key</label>
+				<input id="key" type="text" data-custom="false" data-filter="slug">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col col-lg-6">
+				<span class="iconholder text hint--top" aria-label="Short description of the post type. (Optional)">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="description">Description</label>
+				<input id="description" type="text">
+			</div>
+			<div class="input-field col col-lg-6">
+				<span class="iconholder text hint--top" aria-label="Used to make the Theme translatable. (Optional)">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="text_domain">Text-Domain</label>
+				<input id="text_domain" type="text">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Hierarchical
+					<span class="iconholder hint--top" aria-label="Whether the post type is hierarchical (e.g. page). Allows Parent to be specified.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="hierarchical" type="checkbox">
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Exclude from search
+					<span class="iconholder hint--top" aria-label="Should the posts of this type be excluded from the search results.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="excludesearch" type="checkbox">
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Publicly Queryable
+					<span class="iconholder hint--top" aria-label="If set to No, the single view for a custom post type post is disabled.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="publicly" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Has Archive?
+					<span class="iconholder hint--top" aria-label="Should the post type has archive pages?">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="archive" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Public
+					<span class="iconholder hint--top" aria-label="Controls how the type is visible to authors (show_in_nav_menus, show_ui) and readers (exclude_from_search, publicly_queryable).">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="public" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Show UI
+					<span class="iconholder hint--top" aria-label="Whether to generate a default UI for managing this post type in the admin.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="show_ui" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Show in menu
+					<span class="iconholder hint--top" aria-label="Where to show the post type in the admin menu. show_ui must be true.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="show_in_menu" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Show in admin bar
+					<span class="iconholder hint--top" aria-label="Whether to make this post type available in the WordPress admin bar.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="show_in_admin_bar" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Can export?
+					<span class="iconholder hint--top" aria-label="Can this post_type be exported.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="can_export" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Show in Nav Menus
+					<span class="iconholder hint--top" aria-label="Whether post_type is available for selection in navigation menus.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="show_in_nav_menus" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radio col col-lg-4">
+				<p class="radio-title">Menu Position
+					<span class="iconholder hint--top" aria-label="The position in the menu order the post type should appear. show_in_menu must be true. Default: null - defaults to below Comments">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+					<select id="menu_position">
+						<option value="5" selected>5 - below Posts</option>
+						<option value="10">10 - below Media</option>
+						<option value="15">15 - below Links</option>
+						<option value="20">20 - below Pages</option>
+						<option value="25">25 - below comments</option>
+						<option value="60">60 - below first separator</option>
+						<option value="65">65 - below Plugins</option>
+						<option value="70">70 - below Users</option>
+						<option value="75">75 - below Tools</option>
+						<option value="80">80 - below Settings</option>
+						<option value="100">100 - below second separator</option>
+					</select>
+			</div>
+			<div class="radio col col-lg-4">
+				<p class="radio-title">Capability Type
+					<span class="iconholder hint--top" aria-label="The string to use to build the read, edit, and delete capabilities.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+					<select id="capability">
+						<option value="post" selected>Post</option>
+						<option value="page">Page</option>
+					</select>
+			</div>
+			<div class="radio col col-lg-4">
+				<p class="radio-title">Language
+					<span class="iconholder hint--top" aria-label="What language should be used for the backend (admin UI).">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+					<select id="language">
+						<option value="english" selected>english</option>
+						<option value="german">german</option>
+						<option value="français">français</option>
+						<option value="italiano">italiano</option>
+						<option value="español">español</option>
+						<option value="dutch">dutch</option>
+						<option value="norwegian">norwegian</option>
+						<option value="türkçe">türkçe</option>
+					</select>
+			<p class="lang">Miss a language? <a href="mailto:language@wp-hasty.com">language@wp-hasty.com</a></p>
+			</div>
+		</div>
+		<div id="supports" class="row">
+			<div class="checkboxes col-12">
+				<p class="radio-title">Supports
+					<span class="iconholder hint--top" aria-label="Registers support of certain feature(s) for a given post type. Each feature has a direct impact on the corresponding field displayed in the post edit screen, such as the editor or a meta box.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+			</div>
+			<div class="checkboxes col col-lg-4">
+				<p>
+					<input type="checkbox" id="title" />
+					<label for="title">Title</label>
+				</p>
+				<p>
+					<input type="checkbox" id="editor" />
+					<label for="editor">Editor (Content)</label>
+				</p>
+				<p>
+					<input type="checkbox" id="excerpt" />
+					<label for="excerpt">Excerpt</label>
+				</p>
+				<p>
+					<input type="checkbox" id="thumbnail" />
+					<label for="thumbnail">Featured Image</label>
+				</p>
+			</div>
+			<div class="checkboxes col col-lg-4">
+				<p>
+					<input type="checkbox" id="revisions" />
+					<label for="revisions">Revisions</label>
+				</p>
+				<p>
+					<input type="checkbox" id="author" />
+					<label for="author">Author</label>
+				</p>
+				<p>
+					<input type="checkbox" id="comments" />
+					<label for="comments">Comments</label>
+				</p>
+				<p>
+					<input type="checkbox" id="trackbacks" />
+					<label for="trackbacks">Trackbacks</label>
+				</p>
+			</div>
+			<div class="checkboxes col col-lg-4">
+				<p>
+					<input type="checkbox" id="page-attributes" />
+					<label for="page-attributes">Page Attributes</label>
+				</p>
+				<p>
+					<input type="checkbox" id="post-formats" />
+					<label for="post-formats">Post Formats</label>
+				</p>
+				<p>
+					<input type="checkbox" id="custom-fields" />
+					<label for="custom-fields">Custom Fields</label>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col col-lg-6">
+				<span class="iconholder text hint--top" aria-label="Does this post type have taxonomies. Type the taxonomy key and press enter foreach taxonomy.">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="taxonomies">Taxonomies (Keys)</label>
+				<input id="taxonomies" type="text" name="tags">
+
+				<div id="own">
+					<span class="pro probadge">PRO</span>					<div id="addown" data-type="93"><i class="bx bxs-plus-circle"></i><span>Quick add from your generated taxonomies</span></div>
+					<div id="loaderown" style="display:none">
+						<div class="inner">
+							<div class="loader">
+								<i class="bx bx-loader bx-spin"></i>
+							</div>
+						</div>
+						<div class="ownbtns">
+							<a class="reload" href="#" title="Reload"><i class='bx bx-revision'></i></a>
+							<a class="close" href="#" title="Close"><i class='bx bxs-x-circle'></i></a>
+						</div>
+						<a class="create" target="_blank" href="../wordpress-taxonomy-generator/index.html"><i class='bx bx-link-external'></i><span>Create new taxonomy (New Tab)</span></a>
+					</div>
+				</div>
+
+			</div>
+			<div class="input-field col col-lg-6">
+				<p class="radio-title">Admin Sidebar Icon
+					<span class="iconholder hint--top" aria-label="Select the icon which will be shown in the backend.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<select id="menu_icon" class="icons">
+					<option value="" selected>dashicons-admin-appearance</option><option value="dashicons-admin-collapse">dashicons-admin-collapse</option><option value="dashicons-admin-comments">dashicons-admin-comments</option><option value="dashicons-admin-customizer">dashicons-admin-customizer</option><option value="dashicons-admin-generic">dashicons-admin-generic</option><option value="dashicons-admin-home">dashicons-admin-home</option><option value="dashicons-admin-links">dashicons-admin-links</option><option value="dashicons-admin-media">dashicons-admin-media</option><option value="dashicons-admin-multisite">dashicons-admin-multisite</option><option value="dashicons-admin-network">dashicons-admin-network</option><option value="dashicons-admin-page">dashicons-admin-page</option><option value="dashicons-admin-plugins">dashicons-admin-plugins</option><option value="dashicons-admin-post">dashicons-admin-post</option><option value="dashicons-admin-settings">dashicons-admin-settings</option><option value="dashicons-admin-site-alt">dashicons-admin-site-alt</option><option value="dashicons-admin-site-alt2">dashicons-admin-site-alt2</option><option value="dashicons-admin-site-alt3">dashicons-admin-site-alt3</option><option value="dashicons-admin-site">dashicons-admin-site</option><option value="dashicons-admin-tools">dashicons-admin-tools</option><option value="dashicons-admin-users">dashicons-admin-users</option><option value="dashicons-album">dashicons-album</option><option value="dashicons-align-center">dashicons-align-center</option><option value="dashicons-align-left">dashicons-align-left</option><option value="dashicons-align-none">dashicons-align-none</option><option value="dashicons-align-right">dashicons-align-right</option><option value="dashicons-analytics">dashicons-analytics</option><option value="dashicons-archive">dashicons-archive</option><option value="dashicons-arrow-down-alt">dashicons-arrow-down-alt</option><option value="dashicons-arrow-down-alt2">dashicons-arrow-down-alt2</option><option value="dashicons-arrow-down">dashicons-arrow-down</option><option value="dashicons-arrow-left-alt">dashicons-arrow-left-alt</option><option value="dashicons-arrow-left-alt2">dashicons-arrow-left-alt2</option><option value="dashicons-arrow-left">dashicons-arrow-left</option><option value="dashicons-arrow-right-alt">dashicons-arrow-right-alt</option><option value="dashicons-arrow-right-alt2">dashicons-arrow-right-alt2</option><option value="dashicons-arrow-right">dashicons-arrow-right</option><option value="dashicons-arrow-up-alt">dashicons-arrow-up-alt</option><option value="dashicons-arrow-up-alt2">dashicons-arrow-up-alt2</option><option value="dashicons-arrow-up">dashicons-arrow-up</option><option value="dashicons-art">dashicons-art</option><option value="dashicons-awards">dashicons-awards</option><option value="dashicons-backup">dashicons-backup</option><option value="dashicons-book-alt">dashicons-book-alt</option><option value="dashicons-book">dashicons-book</option><option value="dashicons-buddicons-activity">dashicons-buddicons-activity</option><option value="dashicons-buddicons-bbpress-logo">dashicons-buddicons-bbpress-logo</option><option value="dashicons-buddicons-buddypress-logo">dashicons-buddicons-buddypress-logo</option><option value="dashicons-buddicons-community">dashicons-buddicons-community</option><option value="dashicons-buddicons-forums">dashicons-buddicons-forums</option><option value="dashicons-buddicons-friends">dashicons-buddicons-friends</option><option value="dashicons-buddicons-groups">dashicons-buddicons-groups</option><option value="dashicons-buddicons-pm">dashicons-buddicons-pm</option><option value="dashicons-buddicons-replies">dashicons-buddicons-replies</option><option value="dashicons-buddicons-topics">dashicons-buddicons-topics</option><option value="dashicons-buddicons-tracking">dashicons-buddicons-tracking</option><option value="dashicons-building">dashicons-building</option><option value="dashicons-businessman">dashicons-businessman</option><option value="dashicons-calendar-alt">dashicons-calendar-alt</option><option value="dashicons-calendar">dashicons-calendar</option><option value="dashicons-camera">dashicons-camera</option><option value="dashicons-carrot">dashicons-carrot</option><option value="dashicons-cart">dashicons-cart</option><option value="dashicons-category">dashicons-category</option><option value="dashicons-chart-area">dashicons-chart-area</option><option value="dashicons-chart-bar">dashicons-chart-bar</option><option value="dashicons-chart-line">dashicons-chart-line</option><option value="dashicons-chart-pie">dashicons-chart-pie</option><option value="dashicons-clipboard">dashicons-clipboard</option><option value="dashicons-clock">dashicons-clock</option><option value="dashicons-cloud">dashicons-cloud</option><option value="dashicons-controls-back">dashicons-controls-back</option><option value="dashicons-controls-forward">dashicons-controls-forward</option><option value="dashicons-controls-pause">dashicons-controls-pause</option><option value="dashicons-controls-play">dashicons-controls-play</option><option value="dashicons-controls-repeat">dashicons-controls-repeat</option><option value="dashicons-controls-skipback">dashicons-controls-skipback</option><option value="dashicons-controls-skipforward">dashicons-controls-skipforward</option><option value="dashicons-controls-volumeoff">dashicons-controls-volumeoff</option><option value="dashicons-controls-volumeon">dashicons-controls-volumeon</option><option value="dashicons-dashboard">dashicons-dashboard</option><option value="dashicons-desktop">dashicons-desktop</option><option value="dashicons-dismiss">dashicons-dismiss</option><option value="dashicons-download">dashicons-download</option><option value="dashicons-edit">dashicons-edit</option><option value="dashicons-editor-aligncenter">dashicons-editor-aligncenter</option><option value="dashicons-editor-alignleft">dashicons-editor-alignleft</option><option value="dashicons-editor-alignright">dashicons-editor-alignright</option><option value="dashicons-editor-bold">dashicons-editor-bold</option><option value="dashicons-editor-break">dashicons-editor-break</option><option value="dashicons-editor-code">dashicons-editor-code</option><option value="dashicons-editor-contract">dashicons-editor-contract</option><option value="dashicons-editor-customchar">dashicons-editor-customchar</option><option value="dashicons-editor-expand">dashicons-editor-expand</option><option value="dashicons-editor-help">dashicons-editor-help</option><option value="dashicons-editor-indent">dashicons-editor-indent</option><option value="dashicons-editor-insertmore">dashicons-editor-insertmore</option><option value="dashicons-editor-italic">dashicons-editor-italic</option><option value="dashicons-editor-justify">dashicons-editor-justify</option><option value="dashicons-editor-kitchensink">dashicons-editor-kitchensink</option><option value="dashicons-editor-ltr">dashicons-editor-ltr</option><option value="dashicons-editor-ol">dashicons-editor-ol</option><option value="dashicons-editor-outdent">dashicons-editor-outdent</option><option value="dashicons-editor-paragraph">dashicons-editor-paragraph</option><option value="dashicons-editor-paste-text">dashicons-editor-paste-text</option><option value="dashicons-editor-paste-word">dashicons-editor-paste-word</option><option value="dashicons-editor-quote">dashicons-editor-quote</option><option value="dashicons-editor-removeformatting">dashicons-editor-removeformatting</option><option value="dashicons-editor-rtl">dashicons-editor-rtl</option><option value="dashicons-editor-spellcheck">dashicons-editor-spellcheck</option><option value="dashicons-editor-strikethrough">dashicons-editor-strikethrough</option><option value="dashicons-editor-table">dashicons-editor-table</option><option value="dashicons-editor-textcolor">dashicons-editor-textcolor</option><option value="dashicons-editor-ul">dashicons-editor-ul</option><option value="dashicons-editor-underline">dashicons-editor-underline</option><option value="dashicons-editor-unlink">dashicons-editor-unlink</option><option value="dashicons-editor-video">dashicons-editor-video</option><option value="dashicons-email-alt">dashicons-email-alt</option><option value="dashicons-email-alt2">dashicons-email-alt2</option><option value="dashicons-email">dashicons-email</option><option value="dashicons-excerpt-view">dashicons-excerpt-view</option><option value="dashicons-external">dashicons-external</option><option value="dashicons-facebook-alt">dashicons-facebook-alt</option><option value="dashicons-facebook">dashicons-facebook</option><option value="dashicons-feedback">dashicons-feedback</option><option value="dashicons-filter">dashicons-filter</option><option value="dashicons-flag">dashicons-flag</option><option value="dashicons-format-aside">dashicons-format-aside</option><option value="dashicons-format-audio">dashicons-format-audio</option><option value="dashicons-format-chat">dashicons-format-chat</option><option value="dashicons-format-gallery">dashicons-format-gallery</option><option value="dashicons-format-image">dashicons-format-image</option><option value="dashicons-format-quote">dashicons-format-quote</option><option value="dashicons-format-status">dashicons-format-status</option><option value="dashicons-format-video">dashicons-format-video</option><option value="dashicons-forms">dashicons-forms</option><option value="dashicons-googleplus">dashicons-googleplus</option><option value="dashicons-grid-view">dashicons-grid-view</option><option value="dashicons-groups">dashicons-groups</option><option value="dashicons-hammer">dashicons-hammer</option><option value="dashicons-heart">dashicons-heart</option><option value="dashicons-hidden">dashicons-hidden</option><option value="dashicons-id-alt">dashicons-id-alt</option><option value="dashicons-id">dashicons-id</option><option value="dashicons-image-crop">dashicons-image-crop</option><option value="dashicons-image-filter">dashicons-image-filter</option><option value="dashicons-image-flip-horizontal">dashicons-image-flip-horizontal</option><option value="dashicons-image-flip-vertical">dashicons-image-flip-vertical</option><option value="dashicons-image-rotate-left">dashicons-image-rotate-left</option><option value="dashicons-image-rotate-right">dashicons-image-rotate-right</option><option value="dashicons-image-rotate">dashicons-image-rotate</option><option value="dashicons-images-alt">dashicons-images-alt</option><option value="dashicons-images-alt2">dashicons-images-alt2</option><option value="dashicons-index-card">dashicons-index-card</option><option value="dashicons-info">dashicons-info</option><option value="dashicons-laptop">dashicons-laptop</option><option value="dashicons-layout">dashicons-layout</option><option value="dashicons-leftright">dashicons-leftright</option><option value="dashicons-lightbulb">dashicons-lightbulb</option><option value="dashicons-list-view">dashicons-list-view</option><option value="dashicons-location-alt">dashicons-location-alt</option><option value="dashicons-location">dashicons-location</option><option value="dashicons-lock">dashicons-lock</option><option value="dashicons-marker">dashicons-marker</option><option value="dashicons-media-archive">dashicons-media-archive</option><option value="dashicons-media-audio">dashicons-media-audio</option><option value="dashicons-media-code">dashicons-media-code</option><option value="dashicons-media-default">dashicons-media-default</option><option value="dashicons-media-document">dashicons-media-document</option><option value="dashicons-media-interactive">dashicons-media-interactive</option><option value="dashicons-media-spreadsheet">dashicons-media-spreadsheet</option><option value="dashicons-media-text">dashicons-media-text</option><option value="dashicons-media-video">dashicons-media-video</option><option value="dashicons-megaphone">dashicons-megaphone</option><option value="dashicons-menu-alt">dashicons-menu-alt</option><option value="dashicons-menu">dashicons-menu</option><option value="dashicons-microphone">dashicons-microphone</option><option value="dashicons-migrate">dashicons-migrate</option><option value="dashicons-minus">dashicons-minus</option><option value="dashicons-money">dashicons-money</option><option value="dashicons-move">dashicons-move</option><option value="dashicons-nametag">dashicons-nametag</option><option value="dashicons-networking">dashicons-networking</option><option value="dashicons-no-alt">dashicons-no-alt</option><option value="dashicons-no">dashicons-no</option><option value="dashicons-palmtree">dashicons-palmtree</option><option value="dashicons-paperclip">dashicons-paperclip</option><option value="dashicons-performance">dashicons-performance</option><option value="dashicons-phone">dashicons-phone</option><option value="dashicons-playlist-audio">dashicons-playlist-audio</option><option value="dashicons-playlist-video">dashicons-playlist-video</option><option value="dashicons-plus-alt">dashicons-plus-alt</option><option value="dashicons-plus-light">dashicons-plus-light</option><option value="dashicons-plus">dashicons-plus</option><option value="dashicons-portfolio">dashicons-portfolio</option><option value="dashicons-post-status">dashicons-post-status</option><option value="dashicons-pressthis">dashicons-pressthis</option><option value="dashicons-products">dashicons-products</option><option value="dashicons-randomize">dashicons-randomize</option><option value="dashicons-redo">dashicons-redo</option><option value="dashicons-rest-api">dashicons-rest-api</option><option value="dashicons-rss">dashicons-rss</option><option value="dashicons-schedule">dashicons-schedule</option><option value="dashicons-screenoptions">dashicons-screenoptions</option><option value="dashicons-search">dashicons-search</option><option value="dashicons-share-alt">dashicons-share-alt</option><option value="dashicons-share-alt2">dashicons-share-alt2</option><option value="dashicons-share">dashicons-share</option><option value="dashicons-shield-alt">dashicons-shield-alt</option><option value="dashicons-shield">dashicons-shield</option><option value="dashicons-slides">dashicons-slides</option><option value="dashicons-smartphone">dashicons-smartphone</option><option value="dashicons-smiley">dashicons-smiley</option><option value="dashicons-sort">dashicons-sort</option><option value="dashicons-sos">dashicons-sos</option><option value="dashicons-star-empty">dashicons-star-empty</option><option value="dashicons-star-filled">dashicons-star-filled</option><option value="dashicons-star-half">dashicons-star-half</option><option value="dashicons-sticky">dashicons-sticky</option><option value="dashicons-store">dashicons-store</option><option value="dashicons-tablet">dashicons-tablet</option><option value="dashicons-tag">dashicons-tag</option><option value="dashicons-tagcloud">dashicons-tagcloud</option><option value="dashicons-testimonial">dashicons-testimonial</option><option value="dashicons-text">dashicons-text</option><option value="dashicons-thumbs-down">dashicons-thumbs-down</option><option value="dashicons-thumbs-up">dashicons-thumbs-up</option><option value="dashicons-tickets-alt">dashicons-tickets-alt</option><option value="dashicons-tickets">dashicons-tickets</option><option value="dashicons-tide">dashicons-tide</option><option value="dashicons-translation">dashicons-translation</option><option value="dashicons-trash">dashicons-trash</option><option value="dashicons-twitter">dashicons-twitter</option><option value="dashicons-undo">dashicons-undo</option><option value="dashicons-universal-access-alt">dashicons-universal-access-alt</option><option value="dashicons-universal-access">dashicons-universal-access</option><option value="dashicons-unlock">dashicons-unlock</option><option value="dashicons-update">dashicons-update</option><option value="dashicons-upload">dashicons-upload</option><option value="dashicons-vault">dashicons-vault</option><option value="dashicons-video-alt">dashicons-video-alt</option><option value="dashicons-video-alt2">dashicons-video-alt2</option><option value="dashicons-video-alt3">dashicons-video-alt3</option><option value="dashicons-visibility">dashicons-visibility</option><option value="dashicons-warning">dashicons-warning</option><option value="dashicons-welcome-add-page">dashicons-welcome-add-page</option><option value="dashicons-welcome-comments">dashicons-welcome-comments</option><option value="dashicons-welcome-learn-more">dashicons-welcome-learn-more</option><option value="dashicons-welcome-view-site">dashicons-welcome-view-site</option><option value="dashicons-welcome-widgets-menus">dashicons-welcome-widgets-menus</option><option value="dashicons-welcome-write-blog">dashicons-welcome-write-blog</option><option value="dashicons-wordpress-alt">dashicons-wordpress-alt</option><option value="dashicons-wordpress">dashicons-wordpress</option><option value="dashicons-yes-alt">dashicons-yes-alt</option><option value="dashicons-yes">dashicons-yes</option>				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radio col col-lg-6">
+				<p class="radio-title">Rewrite (Permalink)
+					<span class="iconholder hint--top" aria-label="Triggers the handling of rewrites for this post type. To prevent rewrites, set to false. Default: true and use $post_type as slug">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+					<select id="rewrite">
+						<option value="true" selected>Default (Post Type Key)</option>
+						<option value="false">No Permalink</option>
+						<option value="custom">Custom Permalink</option>
+					</select>
+			</div>
+			<div class="input-field col col-lg-6">
+				<span class="iconholder text hint--top" aria-label="Sets the query_var key for this post type. Default: true - set to $post_type">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="query_var">Custom query variable</label>
+				<input id="query_var" type="text">
+			</div>
+		</div>
+		<div class="row rewriteoptional" style="display:none;">
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="Customize the permalink structure slug. Defaults to the $post_type value. Should be translatable.">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="slug">Slug / Pretty permalink text</label>
+				<input id="slug" type="text">
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Slug as URL base
+					<span class="iconholder hint--top" aria-label="Should the permalink structure be prepended with the front base. (example: if your permalink structure is /blog/, then your links will be: false->/news/, true->/blog/news/). Defaults to true">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="with_front" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-3">
+				<p class="radio-title">Feeds
+					<span class="iconholder hint--top" aria-label="Should a feed permalink structure be built for this post type. Defaults to has_archive value.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="feeds" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="radio col col-lg-2">
+				<p class="radio-title">Pagination
+					<span class="iconholder hint--top" aria-label="Should the permalink structure provide for pagination. Defaults to true">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="pages" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="radio col col-lg-4">
+				<p class="radio-title">Show in REST API
+					<span class="iconholder hint--top" aria-label="Whether to expose this post type in the REST API.">
+						<i class="bx bx-info-circle help"></i>
+					</span>
+				</p>
+				<div class="switch">
+					<label>
+					No
+					<input id="show_in_rest" type="checkbox" checked>
+					<span class="lever"></span>
+					Yes
+					</label>
+				</div>
+			</div>
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="The base slug that this post type will use when accessed using the REST API. Default: $post_type">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="rest_base">Rest Base</label>
+				<input id="rest_base" type="text">
+			</div>
+			<div class="input-field col col-lg-4">
+				<span class="iconholder text hint--top" aria-label="An optional custom controller to use instead of WP_REST_Posts_Controller. Must be a subclass of WP_REST_Controller. Default: WP_REST_Posts_Controller">
+					<i class="bx bx-info-circle help"></i>
+				</span>
+				<label for="rest_controller_class">Rest Controller Class</label>
+				<input id="rest_controller_class" type="text">
+			</div>
+		</div>
+	
+	</form>
+
+	
+</div>
+			<a rel="sponsored" href="https://kinsta.com/devkinsta/?kaid=QJHPGMMMYWFE"><img style="display:block; margin:1rem auto 2rem;border-radius:3px" width="728" height="90" loading="lazy" src="../../wp-content/uploads/kinsta1.png" /></a>
+			<div id="shortcuts">
+				<span class="pro probadge">PRO</span>				<div class="row trans center">
+					<div class="col-sm-12">
+						<div class="shortcut">
+							<div>
+								Press <b>alt</b> + <b>enter</b> to copy snippet to clipboard
+							</div>
+							<div>
+								<span class="alt">alt</span> + <span class="return">⏎</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<div id="feedbackwindow">
+	<div class="headline">
+		<h3>Feedback & Bugreport</h3>
+	</div>
+	<div class="inner">
+		<div id="feedform">
+			<h4>Your feedback is important!</h4>
+			<p>We developed Hasty for you! And we want to improve Hasty for you! So give us feedback and report bugs, so
+				we can make Hasty even better.</p>
+			<textarea class="materialize-textarea"
+				placeholder="Write your Feedback and Bugreport concerning this generator here …"></textarea>
+			<div class="alert">Sorry, message is too short.</div>
+			<div class="notice">Please notice: <b>This is not a support or help form.</b></div>			<button class="btn" data-gen="73" id="sendfeedform"
+				data-key="8e083b0821">Send feedback</button>
+		</div>
+	</div>
+</div>
+
+<div id="helperwindow">
+	<div class="headline">
+		<h3>Help & Tutorial</h3>
+	</div>
+	<div class="inner">
+		<div class="sec">
+			<h4>About</h4>
+			<div class="secinner">
+				<p>Use this tool to register a custom post type on your WordPress site with register_post_type() function.</p>
+				<img alt="Custom Post Type demo screenshot" src="../../wp-content/uploads/2018/08/custom-post-type-screenshot-hasty.jpg" width="500" height="350"  />			</div>
+		</div>
+		<div class="sec">
+			<h4>Helpful links</h4>
+			<div class="secinner">
+
+								
+				<div><a class="extern" target="_blank" href="https://codex.wordpress.org/Function_Reference/register_post_type"><i
+							class="bx bx-link-external"></i> <span>register_post_type function (WordPress Codex)</span></a></div>
+
+				
+				<div><a class="extern" target="_blank" href="https://developer.wordpress.org/reference/functions/add_action/"><i
+							class="bx bx-link-external"></i> <span>add_action hook (WordPress Developer Resources)</span></a></div>
+
+											</div>
+		</div>
+				<div class="sec">
+			<h4>How to use</h4>
+			<div class="secinner">
+				<ul>
+<li>Fill in the form on the left.</li>
+<li>Copy the generated code to the clipboard.</li>
+<li>Paste it into your project (functions.php or something that is enqueued there).</li>
+</ul>
+<p><em>Hint: Don’t forget to save the snippet to reuse it later.</em></p>
+			</div>
+		</div>
+						<div class="sec">
+			<h4>Quick Tutorial</h4>
+			<div class="secinner">
+				<h5>Basic Settings</h5>
+<p>Firstly you want to select a name for the snippet, to find it in Hasty for later use. (PRO only)</p>
+<p>After you finished that, name your custom post type. A singular and a plural name is needed to set the correct labels at the backend. Please make sure to set a unique post type key, to prevent errors. This is the key you will use in your queries within your project.</p>
+<p>Optionally you can select a shot description of the custom post type and a text-domain. The text-domain makes your theme translatable.</p>
+<h5>Advanced Settings</h5>
+<p>Now that all basic settings are made it&#8217;s time to define how the custom post type will behave. Check the hints for a short description of each argument. In most cases the default settings from Hasty will make it work. However it is recommended to specify the arguments depending on your needs.</p>
+<p>If you are missing any languages for the post type labels we appreciate new translations via mail <a href="mailto:language@wp-hasty.com">language@wp-hasty.com</a>.</p>
+<h5>Available features</h5>
+<p>After all settings are made, define what built in features you need on your post editing screen. By activating only the necessary features, you make sure that the post editing screen is nice and simple.</p>
+<p>If more specific fields are needed check out the <a href="../wordpress-metabox-generator/index.html">Metabox Generator</a>! (PRO only)</p>
+			</div>
+		</div>
+		
+		<div class="support">
+			<div class="notice">If you need help or support, you have to purchase <a class="proo" href="https://www.wp-hasty.com/register/pro-subscription/">PRO</a></div>		</div>
+
+	</div>
+</div>
+
+
+<div id="helperhinter">
+	Placeholder
+</div>
+
+<div id="dobuttons">
+	<span class="pro probadge">PRO</span>	<div class="inner">
+		<button id="savesnippet" data-success="Snippet saved" disabled><i class="bx bx-save"></i><span>Save
+				snippet</span></button>
+		<button id="savenewsnippet" data-success="Snippet saved"><i class="bx bx-list-plus"></i><span>Save as new
+				snippet</span></button>
+		<button id="showload" data-secure="4f8ee21b59"><i
+				class="bx bx-list-ul"></i><span>Load a snippet</span></button>
+		<a href="index.html"><i class="bx bx-file-blank"></i><span>Create new snippet</span></a>
+		<button id="copycode" data-success="Code copied!"><i class="bx bx-copy"></i><span>Copy code</span></button>
+	</div>
+</div>
+
+<div class="modalview" id="savemodal" style="display:none">
+	<div class="modal">
+		<div class="container">
+			<div class="inner">
+				<div class="infos">
+					<h3>Save as new snippet</h3>
+					<div>
+						<label for="snippetname">Your snippet name:</label>
+						<input id="snippetname" type="text" placeholder="For example: Project Space" maxlength="50">
+						<div id="snippetname-length">Max. characters: <span>0</span> / 50</div>
+					</div>
+				</div>
+				<div class="btns">
+					<button id="acceptsaving" disabled><i class="bx bx-check-circle"></i><span>Save as new
+							snippet</span></button>
+					<button id="cancelsaving"><i class="bx bx-x-circle"></i><span>Cancel</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modalview" id="loadmodal" style="display:none">
+	<div class="modal">
+		<div class="container">
+			<div class="inner">
+				<div class="infos">
+
+				</div>
+				<div class="btns">
+					<button id="cancelloading"><i class="bx bx-x-circle"></i><span>Cancel</span></button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	var editor = ace.edit("codeeditor");
+	editor.getSession().setMode({
+		path: "ace/mode/php",
+		inline: true
+	});
+	editor.$blockScrolling = Infinity;
+
+	editor.setValue("// Fill out the form on the left, the rest is pure vanilla Magic.");
+	editor.setReadOnly(true);
+	editor.getSession().selection.clearSelection();
+</script>
+
+</div>
+<footer id="footer" class="clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"><b>© 2021 Hasty</b></div>
+
+			<div class="col-sm-8 ar">
+				<div class="menu-footer-container"><ul id="footermenu" class="menu"><li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-127"><a href="https://www.wp-hasty.com/">Home</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://www.wp-hasty.com/site-notice/">Site Notice</a></li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://www.wp-hasty.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-128"><a href="https://www.wp-hasty.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>				<div id="twitterbox">
+					<a title="Follow Hasty on Twitter" target="_blank" href="https://twitter.com/wp_hasty">
+						<i class='bx bxl-twitter'></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer> <!-- end footer -->
+
+</div><!-- #page -->
+
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.min9f31.js?ver=5.7.2' id='wp-embed-js'></script>
+
+
+<div id="signupmodal" style="display:none"><div class="inner"><div class="box"><div class="close"><i class="bx bx-x"></i></div><div class="pricing"><div class="headline">Sorry, but this feature is only for <span class="pro">pro</span> members.</div><div class="price"><div><span>$</span>4</div><div> per month</div></div><div><div class="cup"><div class="smoke"><span></span><span></span><span></span></div></div><div class="text">That’s only two coffees per month. Billed annually -> $48. Taxes included.</div></div><div class="btns"><a class="btn" title="Sign up" href="https://www.wp-hasty.com/register/pro-subscription/">» Sign up</a><a class="btn light" title="All premium features" href="https://www.wp-hasty.com/pro/">» See all premium features</a></div></div><div class="login"><a title="login" href="https://www.wp-hasty.com/login/">Already have an account? » Login</a></div></div></div></div>
+
+
+
+<div id="optionsmenu" data-nonce="fu"><span class="pro probadge">PRO</span><div class="inner"><div class="row align-items-end"><div id="themeoption" class="option col"><div class="title">Hasty Theme</div><div class="selectors"><span class="active" data-option="1">Light Theme</span><span data-option="2">Dark Theme</span></div></div><div id="editoroption" class="option col"><div class="title">Code-Editor Theme</div><div class="selectors"><span class="active" data-option="1">Light Theme</span><span data-option="2">Dark Theme</span></div></div><div id="codeformatoption" class="option col"><div class="title">Default Code-Format </div><div class="selectors"><span class="active" data-option="1">Normal</span><span data-option="2">Normal with helpers</span><span data-option="3">Compressed</span></div></div><div class="option"><button class="btn" id="optionssave" disabled>Save & Close</button></div></div></div></div>
+</body>
+
+<!-- Mirrored from www.wp-hasty.com/tools/wordpress-custom-post-type-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 May 2021 18:06:37 GMT -->
+</html>
